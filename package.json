@@ -20,7 +20,8 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test",
+    "prepare": "husky install",
+    "test": "prettier --check . && eslint . && stylelint \"**/*.css\" ",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
@@ -46,6 +47,8 @@
     "@typescript-eslint/parser": "^4.33.0",
     "eslint": "^7.32.0",
     "eslint-config-prettier": "^8.3.0",
+    "husky": "^7.0.4",
+    "lint-staged": "^12.0.2",
     "prettier": "^2.4.1",
     "stylelint": "^14.1.0"
   }

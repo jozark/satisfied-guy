@@ -1,16 +1,13 @@
 import React from 'react';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import './App.css';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 function App(): JSX.Element {
   return (
-    <BrowserRouter>
+    <Router>
       <Routes>
-        <Route path="/">
-          <h1>hello world</h1>
-        </Route>
+        <Route path="/" element={<h1>Wello Horld</h1>}></Route>
       </Routes>
-    </BrowserRouter>
+    </Router>
   );
 }
 

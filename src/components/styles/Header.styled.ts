@@ -13,11 +13,13 @@ export const Nav = styled.nav`
   div {
     display: flex;
     justify-content: space-around;
-    gap: 1rem;
+    gap: 2rem;
   }
 
   a {
+    font-family: 'Roboto Mono', monospace;
     text-decoration: none;
     color: #fff;
+    opacity: 0.7;
   }
 `;

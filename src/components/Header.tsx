@@ -9,14 +9,16 @@ export default function navbar(): JSX.Element {
     <StyledHeader>
       <Container>
         <Nav>
-          <Logo />
+          <Link to="/">
+            <Logo />
+          </Link>
           <Line />
           <div>
-            <Link to="#">Info</Link>
-            <Link to="#">Gallery</Link>
-            <Link to="#">Roadmap</Link>
-            <Link to="#">Team</Link>
-            <Link to="#">FAQ</Link>
+            <Link to="#">info</Link>
+            <Link to="#">gallery</Link>
+            <Link to="#">roadmap</Link>
+            <Link to="#">team</Link>
+            <Link to="#">faq</Link>
           </div>
         </Nav>
       </Container>

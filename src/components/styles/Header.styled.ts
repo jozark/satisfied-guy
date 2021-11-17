@@ -1,7 +1,10 @@
 import styled from 'styled-components';
 
 export const StyledHeader = styled.header`
-  padding: 1rem 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  padding: 1rem;
 `;
 
 export const Nav = styled.nav`
@@ -12,7 +15,7 @@ export const Nav = styled.nav`
 
   div {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     gap: 2rem;
   }
 

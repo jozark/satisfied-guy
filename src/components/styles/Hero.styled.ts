@@ -13,22 +13,22 @@ export const Video = styled.video`
 `;
 
 export const ImageLeft = styled.img`
-  margin-left: -5%;
+  margin-left: -8%;
   width: 100%;
+  padding-bottom: 10%;
 `;
 
 export const ImageRight = styled.img`
   justify-self: flex-end;
   width: 30%;
   margin-right: 20%;
-  padding-bottom: 2rem;
 `;
 
 export const Grid = styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr;
   height: 100%;
-  padding-bottom: 5%;
+  padding-bottom: 2.5%;
   gap: 1rem;
   grid-auto-flow: column;
   align-items: flex-end;

@@ -10,8 +10,8 @@ export default function navbar(): JSX.Element {
         <Link to="/">
           <Logo />
         </Link>
-        <Line />
-        <div>
+        <Line className="line" />
+        <div className="navigation">
           <Link to="#">info</Link>
           <Link to="#">gallery</Link>
           <Link to="#">roadmap</Link>

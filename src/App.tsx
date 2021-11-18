@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { GlobalStyles } from './components/styles/Global';
 import Header from './components/Header';
 import Hero from './components/Hero';
+import Info from './components/Info';
 
 function App(): JSX.Element {
   return (
@@ -17,6 +18,7 @@ function App(): JSX.Element {
               <>
                 <Header />
                 <Hero />
+                <Info />
               </>
             }
           ></Route>

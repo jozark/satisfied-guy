@@ -5,7 +5,14 @@ const theme: DefaultTheme = {
     background: 'black',
     accent: 'red',
   },
-  mobile: '768px',
+  breakingPoints: {
+    mobile: '767px',
+    tablet: {
+      max: '1023px',
+      min: '768px',
+    },
+    desktop: '1024px',
+  },
 };
 
 export { theme };

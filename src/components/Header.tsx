@@ -1,23 +1,41 @@
 import { Link } from 'react-router-dom';
-import Line from './assets/Line';
 import Logo from './assets/Logo';
-import { StyledHeader, Nav } from './styles/Header.styled';
+import {
+  StyledHeader,
+  Nav,
+  Links,
+  StyledLine,
+  BarIcon,
+  CloseIcon,
+  MenuIcon,
+} from './styles/Header.styled';
 
-export default function navbar(): JSX.Element {
+type NavbarProps = {
+  isClicked: boolean;
+  handleClick: () => void;
+};
+
+export default function navbar({
+  isClicked,
+  handleClick,
+}: NavbarProps): JSX.Element {
   return (
     <StyledHeader>
       <Nav>
         <Link to="/">
           <Logo />
         </Link>
-        <Line />
-        <div>
+        <StyledLine />
+        <Links>
           <Link to="#">info</Link>
           <Link to="#">gallery</Link>
           <Link to="#">roadmap</Link>
           <Link to="#">team</Link>
           <Link to="#">faq</Link>
-        </div>
+        </Links>
+        <MenuIcon onClick={handleClick}>
+          {!isClicked ? <BarIcon /> : <CloseIcon />}
+        </MenuIcon>
       </Nav>
     </StyledHeader>
   );

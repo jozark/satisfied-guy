@@ -6,6 +6,13 @@ declare module 'styled-components' {
       background: string;
       accent: string;
     };
-    mobile: string;
+    breakingPoints: {
+      mobile: string;
+      tablet: {
+        max: string;
+        min: string;
+      };
+      desktop: string;
+    };
   }
 }

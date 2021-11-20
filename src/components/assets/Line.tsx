@@ -18,7 +18,7 @@ export default function Line(
         transform="translate(-183.957 -26.137)"
         fill="none"
         stroke="#fff"
-        stroke-width="1"
+        strokeWidth="1"
       />
     </svg>
   );

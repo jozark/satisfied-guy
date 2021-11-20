@@ -18,9 +18,9 @@ export default function Logo(
         transform="translate(-425.744 -403.92)"
         fill="none"
         stroke="#fff"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-        stroke-width="5"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        strokeWidth="5"
       />
     </svg>
   );

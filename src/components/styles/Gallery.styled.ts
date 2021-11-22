@@ -18,7 +18,7 @@ export const GalleryWrapper = styled(ScrollContainer)`
   display: grid;
   grid-auto-flow: column;
   gap: 5rem;
-  padding: 0 2.5rem;
+  padding: 0 2rem;
   padding-top: 3rem;
   @media (max-width: ${({ theme }) => theme.breakingPoints.mobile}) {
     gap: 2rem;

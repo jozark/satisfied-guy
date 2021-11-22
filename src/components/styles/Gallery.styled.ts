@@ -19,18 +19,8 @@ export const GalleryWrapper = styled.div`
   @media (min-width: ${({ theme }) => theme.breakingPoints.tablet.max}) {
     display: grid;
     grid-auto-flow: column;
-    gap: 4rem;
-    padding: 0 2rem;
-  }
-`;
-
-export const MobileWrapper = styled.div`
-  display: none;
-  @media (max-width: ${({ theme }) => theme.breakingPoints.tablet.max}) {
-    display: grid;
-    grid-auto-flow: column;
-    gap: 4rem;
-    padding: 0 2rem;
     overflow-x: scroll;
+    gap: 3rem;
+    padding: 0 2.5rem;
   }
 `;

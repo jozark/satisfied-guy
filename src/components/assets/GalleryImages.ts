@@ -29,9 +29,4 @@ export const GalleryImages = [
     street: 'Schulterblatt',
     number: '05',
   },
-  {
-    path: 'images/three.jpg',
-    street: 'Schulterblatt',
-    number: '05',
-  },
 ];

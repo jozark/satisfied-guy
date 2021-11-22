@@ -1,27 +1,38 @@
 import styled from 'styled-components';
+import ScrollContainer from 'react-indiana-drag-scroll';
 
 export const StyledGallery = styled.div`
   display: grid;
   align-items: center;
   width: 100%;
   height: 100vh;
-  overflow-x: scroll;
-  /* padding: 0 2rem; */
   background-image: url('images/hamburg.svg');
-  background-repeat: no-repeat;
+  /* background-repeat: no-repeat; */
+  /* background-position: top; */
+  /* background-size: 200%; */
 
   &::-webkit-scrollbar {
     display: none;
   }
+`;
 
-  .scroll {
-    height: 100%;
+export const GalleryWrapper = styled(ScrollContainer)`
+  display: none;
+  @media (min-width: ${({ theme }) => theme.breakingPoints.tablet.max}) {
+    display: grid;
+    grid-auto-flow: column;
+    gap: 4rem;
+    padding: 0 2rem;
   }
 `;
 
-export const GalleryWrapper = styled.div`
-  display: grid;
-  grid-auto-flow: column;
-  gap: 2rem;
-  height: fit-content;
+export const MobileWrapper = styled.div`
+  display: none;
+  @media (max-width: ${({ theme }) => theme.breakingPoints.tablet.max}) {
+    display: grid;
+    grid-auto-flow: column;
+    gap: 4rem;
+    padding: 0 2rem;
+    overflow-x: scroll;
+  }
 `;

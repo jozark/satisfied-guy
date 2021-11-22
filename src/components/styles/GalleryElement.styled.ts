@@ -1,11 +1,23 @@
 import styled from 'styled-components';
 
+type ImageContainerProps = {
+  margin: string;
+};
+
 export const StyledImage = styled.img`
-  max-width: 300px;
+  @media (max-width: ${({ theme }) => theme.breakingPoints.mobile}) {
+    max-width: 300px;
+  }
 `;
 
-export const ImageContainer = styled.div`
+export const OuterContainer = styled.div`
+  height: 380px;
+`;
+
+export const ImageContainer = styled.div<ImageContainerProps>`
   position: relative;
+  width: 400px;
+  margin: ${({ margin }) => margin};
 `;
 
 export const Street = styled.p`
@@ -28,7 +40,6 @@ export const Number = styled.p`
 
 export const Caption = styled.div`
   position: absolute;
-  display: inline;
   z-index: 1;
   bottom: -30px;
   left: 24px;

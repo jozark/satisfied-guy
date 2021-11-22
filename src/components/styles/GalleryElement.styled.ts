@@ -29,6 +29,7 @@ export const ImageContainer = styled.div<ImageContainerProps>`
 
 export const Street = styled.p`
   text-transform: uppercase;
+  font-family: 'Sarpanch', sans-serif;
   font-weight: 900;
   font-size: 1.5rem;
   padding: 0;
@@ -37,8 +38,9 @@ export const Street = styled.p`
 
 export const Number = styled.p`
   text-transform: uppercase;
-  font-size: 1.5rem;
+  font-family: 'Sarpanch', sans-serif;
   font-weight: 900;
+  font-size: 1.5rem;
   text-align: end;
   padding: 0;
   line-height: 1;
@@ -47,6 +49,8 @@ export const Number = styled.p`
 
 export const Caption = styled.div`
   position: absolute;
+  font-family: 'Sarpanch', sans-serif;
+  font-weight: 900;
   z-index: 1;
   bottom: -30px;
   left: 24px;

@@ -12,12 +12,19 @@ export const StyledImage = styled.img`
 
 export const OuterContainer = styled.div`
   height: 380px;
+  @media (max-width: ${({ theme }) => theme.breakingPoints.mobile}) {
+    height: 290px;
+  }
 `;
 
 export const ImageContainer = styled.div<ImageContainerProps>`
   position: relative;
   width: 400px;
   margin: ${({ margin }) => margin};
+  @media (max-width: ${({ theme }) => theme.breakingPoints.mobile}) {
+    /* margin: 0; */
+    width: auto;
+  }
 `;
 
 export const Street = styled.p`

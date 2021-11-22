@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import ScrollContainer from 'react-indiana-drag-scroll';
 
 export const StyledGallery = styled.div`
   display: grid;
@@ -6,21 +7,21 @@ export const StyledGallery = styled.div`
   width: 100%;
   height: 100vh;
   background-image: url('images/hamburg.svg');
-  /* background-repeat: no-repeat; */
-  /* background-position: top; */
-  /* background-size: 200%; */
+  background-repeat: no-repeat;
+
   &::-webkit-scrollbar {
     display: none;
   }
 `;
 
-export const GalleryWrapper = styled.div`
-  display: none;
-  @media (min-width: ${({ theme }) => theme.breakingPoints.tablet.max}) {
-    display: grid;
-    grid-auto-flow: column;
-    overflow-x: scroll;
-    gap: 3rem;
-    padding: 0 2.5rem;
+export const GalleryWrapper = styled(ScrollContainer)`
+  display: grid;
+  grid-auto-flow: column;
+  gap: 5rem;
+  padding: 0 2.5rem;
+  padding-top: 3rem;
+  @media (max-width: ${({ theme }) => theme.breakingPoints.mobile}) {
+    gap: 2rem;
+    padding-top: 0rem;
   }
 `;

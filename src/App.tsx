@@ -29,6 +29,7 @@ function App(): JSX.Element {
                 <Info />
                 <Devider>Hamburg</Devider>
                 <Gallery />
+                <Info />
               </>
             }
           ></Route>

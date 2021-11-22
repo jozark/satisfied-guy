@@ -10,7 +10,11 @@ const margin = {
 export default function Gallery(): JSX.Element {
   return (
     <StyledGallery>
-      <GalleryWrapper>
+      <GalleryWrapper
+        horizontal={true}
+        vertical={false}
+        nativeMobileScroll={true}
+      >
         {GalleryImages.map((image, index) => {
           return (
             <GalleryElement

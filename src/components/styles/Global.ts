@@ -5,6 +5,12 @@ export const GlobalStyles = createGlobalStyle`
 
   @import url('https://fonts.googleapis.com/css2?family=Mako&family=Noto+Sans&display=swap');
   
+  @font-face {
+  font-family: 'Sarpanch', sans-serif;
+  src: url('assets/Sarpanch-Bold.ttf');
+  font-weight: 700;
+}
+  
   *,
   *::after,
   *::before {

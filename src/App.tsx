@@ -6,6 +6,8 @@ import { GlobalStyles } from './components/styles/Global';
 import Header from './components/Header';
 import Hero from './components/Hero';
 import Info from './components/Info';
+import Devider from './components/Devider';
+import Gallery from './components/Gallery';
 
 function App(): JSX.Element {
   const [isClicked, setIsClicked] = useState(false);
@@ -24,6 +26,9 @@ function App(): JSX.Element {
                   handleClick={() => setIsClicked(!isClicked)}
                 />
                 <Hero />
+                <Info />
+                <Devider>Hamburg</Devider>
+                <Gallery />
                 <Info />
               </>
             }

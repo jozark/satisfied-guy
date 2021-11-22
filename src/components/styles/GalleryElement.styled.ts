@@ -13,7 +13,7 @@ export const StyledImage = styled.img`
 export const OuterContainer = styled.div`
   height: 380px;
   @media (max-width: ${({ theme }) => theme.breakingPoints.mobile}) {
-    height: 290px;
+    height: 300px;
   }
 `;
 

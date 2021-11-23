@@ -9,6 +9,7 @@ import Info from './components/Info';
 import Devider from './components/Devider';
 import Gallery from './components/Gallery';
 import Roadmap from './components/Roadmap';
+import Team from './components/Team';
 
 function App(): JSX.Element {
   const [isClicked, setIsClicked] = useState(false);
@@ -31,6 +32,7 @@ function App(): JSX.Element {
                 <Devider>Hamburg</Devider>
                 <Gallery />
                 <Roadmap />
+                <Team />
               </>
             }
           ></Route>

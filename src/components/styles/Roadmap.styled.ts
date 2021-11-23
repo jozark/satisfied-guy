@@ -3,14 +3,12 @@ import styled from 'styled-components';
 export const StyledRoadmap = styled.div`
   position: relative;
   display: grid;
-  background-image: url('images/roadmap.svg');
   grid-template-rows: auto 1fr;
-  background-position: 50% 78%;
+  background-position: 50% 72%;
   background-repeat: no-repeat;
-  background-size: auto;
-  height: 100vh;
+  background-size: cover;
   width: 100%;
-  padding: 0 2rem;
+  gap: 2rem;
 `;
 
 export const RoadmapElement = styled.div`
@@ -37,7 +35,6 @@ export const RoadmapElement = styled.div`
 `;
 
 export const Text = styled.div`
-  padding-top: 3rem;
   justify-self: center;
   text-align: center;
   @media (max-width: ${({ theme }) => theme.breakingPoints.tablet.max}) {
@@ -54,10 +51,16 @@ export const Heading = styled.h1`
 `;
 
 export const RoadmapWrapper = styled.div`
+  height: 600px;
   align-self: center;
+  align-content: center;
+  background-image: url('images/roadmap.svg');
+  background-repeat: no-repeat;
+  background-position: center;
   display: grid;
   grid-auto-flow: column;
   gap: 1rem;
+  padding-bottom: 2rem;
 
   @media (max-width: ${({ theme }) => theme.breakingPoints.tablet.max}) {
     grid-auto-flow: row;

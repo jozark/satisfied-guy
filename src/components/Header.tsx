@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom';
+import { HashLink } from 'react-router-hash-link';
 import Logo from './assets/Logo';
 import {
   StyledHeader,
@@ -22,16 +22,16 @@ export default function navbar({
   return (
     <StyledHeader>
       <Nav>
-        <Link to="/">
+        <HashLink to="/">
           <Logo />
-        </Link>
+        </HashLink>
         <StyledLine />
         <Links>
-          <Link to="#">info</Link>
-          <Link to="#">gallery</Link>
-          <Link to="#">roadmap</Link>
-          <Link to="#">team</Link>
-          <Link to="#">faq</Link>
+          <HashLink to="#info">info</HashLink>
+          <HashLink to="#gallery">gallery</HashLink>
+          <HashLink to="#roadmap">roadmap</HashLink>
+          <HashLink to="#team">team</HashLink>
+          <HashLink to="#faq">faq</HashLink>
         </Links>
         <MenuIcon onClick={handleClick}>
           {!isClicked ? <BarIcon /> : <CloseIcon />}

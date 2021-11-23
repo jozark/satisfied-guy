@@ -7,7 +7,7 @@ type DeviderProps = {
 
 export default function Devider({ children }: DeviderProps): JSX.Element {
   return (
-    <StyledDevider>
+    <StyledDevider id="gallery">
       <DeviderLine />
       {children}
       <DeviderLine />

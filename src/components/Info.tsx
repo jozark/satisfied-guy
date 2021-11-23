@@ -6,7 +6,7 @@ export default function Info(): JSX.Element {
   return (
     <Container>
       <StyledInfo>
-        <Image src="images/double_face.png" alt="" />
+        <Image src="images/double_face.png" alt="" id="info" />
         <div>
           <Heading>Satisfied Guy</Heading>
           <Subheading>Street Art Goes Digital</Subheading>

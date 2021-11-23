@@ -12,7 +12,7 @@ export default function Roadmap(): JSX.Element {
   return (
     <StyledRoadmap>
       <Text>
-        <Heading>Roadmap</Heading>
+        <Heading id="roadmap">Roadmap</Heading>
         <Subheading>What we have planned going forward</Subheading>
       </Text>
 

@@ -61,6 +61,8 @@ export const RoadmapWrapper = styled.div`
   grid-auto-flow: column;
   gap: 1rem;
   padding-bottom: 2rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
 
   @media (max-width: ${({ theme }) => theme.breakingPoints.tablet.max}) {
     grid-auto-flow: row;

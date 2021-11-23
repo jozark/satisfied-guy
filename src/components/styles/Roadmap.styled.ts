@@ -44,7 +44,6 @@ export const Text = styled.div`
 `;
 
 export const Heading = styled.h1`
-  position: relative;
   font-size: 3rem;
   font-weight: bold;
   font-style: italic;

@@ -28,7 +28,7 @@ function App(): JSX.Element {
                 />
                 <Hero />
                 <Info />
-                <Devider>Gallery</Devider>
+                <Devider>Hamburg</Devider>
                 <Gallery />
                 <Roadmap />
               </>

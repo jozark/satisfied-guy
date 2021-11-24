@@ -8,7 +8,8 @@ export const StyledTeamElement = styled.div`
 `;
 
 export const Image = styled.img`
-  margin-bottom: 0.5rem;
+  margin-bottom: 1rem;
+  padding: 0 0.5rem;
   width: 100%;
   max-width: 400px;
 `;
@@ -21,9 +22,9 @@ export const Member = styled.h3`
 
 export const Subtext = styled.p`
   font-size: 1.25rem;
+  padding-top: 0;
   text-align: center;
   font-style: italic;
-  padding: 0;
 `;
 
 export const SocialMedia = styled.div`
@@ -35,9 +36,21 @@ export const SocialMedia = styled.div`
 export const Twitter = styled(FaTwitter)`
   color: white;
   font-size: 1.5rem;
+
+  &:hover {
+    transition: all 200ms ease-in-out;
+    color: #1da1f2;
+    transform: scale(1.1);
+  }
 `;
 
 export const Instagram = styled(FaInstagram)`
   color: white;
   font-size: 1.5rem;
+
+  &:hover {
+    transition: all 150ms ease-in-out;
+    color: #cc2366;
+    transform: scale(1.1);
+  }
 `;

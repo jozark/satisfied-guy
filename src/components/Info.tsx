@@ -4,9 +4,9 @@ import { Image, StyledInfo, Heading, Subheading } from './styles/Info.styled';
 
 export default function Info(): JSX.Element {
   return (
-    <Container>
+    <Container id="info">
       <StyledInfo>
-        <Image src="images/double_face.png" alt="" id="info" />
+        <Image src="images/double_face.png" alt="" />
         <div>
           <Heading>Satisfied Guy</Heading>
           <Subheading>Street Art Goes Digital</Subheading>
@@ -22,7 +22,7 @@ export default function Info(): JSX.Element {
             They take the potential risk of paying high fines. Or even worse,
             getting arrested. However, their work also contributes to the
             culture and uniqueness of cities. Usually, street artists need to
-            stay anonym and make a living elsewhere. NFTs finally give street
+            stay anonymous and make a living elsewhere. NFTs finally give street
             artists the opportunity to build a community and interact with it in
             a meaningful way.
           </p>

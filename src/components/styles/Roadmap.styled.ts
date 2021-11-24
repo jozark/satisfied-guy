@@ -17,7 +17,6 @@ export const StyledRoadmap = styled.div`
   background-size: cover;
   width: 100%;
   gap: 2rem;
-  /* padding: 0 1rem; */
 `;
 
 export const RoadmapElement = styled.div<RoadmapElementProps>`

@@ -10,9 +10,35 @@ import Devider from './components/Devider';
 import Gallery from './components/Gallery';
 import Roadmap from './components/Roadmap';
 import Team from './components/Team';
+import Faq from './components/Faq';
+import FaqElement from './components/FaqElement';
+import Footer from './components/Footer';
 
 function App(): JSX.Element {
   const [isClicked, setIsClicked] = useState(false);
+
+  const [faqs, setFaqs] = useState([
+    { question: 'Wen mint ?!?', answer: 'TBA', open: false },
+    { question: 'How many Items?', answer: '555', open: false },
+    {
+      question: 'What the hell is satisfied guy?',
+      answer: 'hehe',
+      open: false,
+    },
+  ]);
+
+  function toggleFaq(index: number): void {
+    setFaqs(
+      faqs.map((faq, i) => {
+        if (i === index) {
+          faq.open = !faq.open;
+        } else {
+          faq.open = false;
+        }
+        return faq;
+      })
+    );
+  }
 
   return (
     <ThemeProvider theme={theme}>
@@ -33,6 +59,19 @@ function App(): JSX.Element {
                 <Gallery />
                 <Roadmap />
                 <Team />
+                <Faq>
+                  {faqs.map((faq, i) => (
+                    <FaqElement
+                      question={faq.question}
+                      isClicked={faq.open}
+                      index={i}
+                      handleOnClick={() => toggleFaq(i)}
+                    >
+                      {faq.answer}
+                    </FaqElement>
+                  ))}
+                </Faq>
+                <Footer />
               </>
             }
           ></Route>

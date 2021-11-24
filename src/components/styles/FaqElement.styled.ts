@@ -14,6 +14,10 @@ export const StyledFaqElement = styled.div`
 export const Question = styled.h3`
   font-size: 1.5rem;
   font-weight: 900;
+
+  @media (max-width: ${({ theme }) => theme.breakingPoints.tablet.max}) {
+    font-size: 1.25rem;
+  }
 `;
 
 export const Answer = styled.p`

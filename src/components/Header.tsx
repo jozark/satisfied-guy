@@ -1,16 +1,12 @@
-import { Link } from 'react-router-dom';
 import { HashLink } from 'react-router-hash-link';
 import Logo from './assets/Logo';
 import {
   StyledHeader,
   Nav,
   Links,
-  StyledLine,
   BarIcon,
   CloseIcon,
   MenuIcon,
-  Twitter,
-  Discord,
 } from './styles/Header.styled';
 
 type NavbarProps = {

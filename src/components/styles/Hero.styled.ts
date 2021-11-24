@@ -2,8 +2,8 @@ import styled from 'styled-components';
 
 export const StyledHero = styled.div`
   height: 100vh;
-  /* background-image: url('images/three.jpg');
-  background-size: cover; */
+  background-image: url('images/hero.png');
+  background-size: cover;
 `;
 
 export const Video = styled.video`

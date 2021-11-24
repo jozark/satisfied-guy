@@ -9,6 +9,7 @@ export const StyledFaqElement = styled.div`
   &:hover {
     background-color: #b6672b;
     transition: all 200ms ease-in-out;
+    cursor: pointer;
   }
 `;
 export const Question = styled.h3`

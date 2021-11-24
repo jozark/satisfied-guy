@@ -37,6 +37,7 @@ export const Twitter = styled(FaTwitter)`
     transition: all 200ms ease-in-out;
     color: #1da1f2;
     transform: scale(1.1);
+    cursor: pointer;
   }
 `;
 
@@ -45,6 +46,7 @@ export const Discord = styled(FaDiscord)`
   font-size: 1.5rem;
 
   &:hover {
+    cursor: pointer;
     transition: all 200ms ease-in-out;
     color: #7289da;
     transform: scale(1.2);

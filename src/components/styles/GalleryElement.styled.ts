@@ -16,6 +16,7 @@ export const OuterContainer = styled.div`
   &:hover,
   &:focus {
     transform: scale(1.01);
+    cursor: grab;
   }
 
   @media (max-width: ${({ theme }) => theme.breakingPoints.mobile}) {

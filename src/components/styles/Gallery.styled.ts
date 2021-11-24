@@ -5,7 +5,6 @@ export const StyledGallery = styled.div`
   display: grid;
   align-items: center;
   width: 100%;
-  min-height: 100vh;
   padding: 10rem 0;
   background-image: url('images/hamburg.svg');
   background-position: 20% 30%;

@@ -8,27 +8,18 @@ export default function Team(): JSX.Element {
       <Heading>Team</Heading>
       <TeamWrapper>
         <TeamElement
-          path="images/double_face.png"
+          path="images/team1.png"
           position="Art & Soul of the Project"
         >
           Satisfied Guy
         </TeamElement>
-        <TeamElement
-          path="images/double_face.png"
-          position="Art & Soul of the Project"
-        >
+        <TeamElement path="images/team2.png" position="Galerist & Management">
           Bludin
         </TeamElement>
-        <TeamElement
-          path="images/double_face.png"
-          position="Art & Soul of the Project"
-        >
+        <TeamElement path="images/team3.png" position="Web Developer">
           Joshua
         </TeamElement>
-        <TeamElement
-          path="images/double_face.png"
-          position="Art & Soul of the Project"
-        >
+        <TeamElement path="images/team4.png" position="UX/UI Design">
           Jan Lucas
         </TeamElement>
       </TeamWrapper>

@@ -8,7 +8,6 @@ export const StyledGallery = styled.div`
   padding: 10rem 0;
   background-image: url('images/hamburg.svg');
   background-position: 20% 30%;
-  background-size: 130%;
   background-repeat: no-repeat;
 
   &::-webkit-scrollbar {

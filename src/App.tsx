@@ -12,6 +12,7 @@ import Roadmap from './components/Roadmap';
 import Team from './components/Team';
 import Faq from './components/Faq';
 import FaqElement from './components/FaqElement';
+import Footer from './components/Footer';
 
 function App(): JSX.Element {
   const [isClicked, setIsClicked] = useState(false);
@@ -70,6 +71,7 @@ function App(): JSX.Element {
                     </FaqElement>
                   ))}
                 </Faq>
+                <Footer />
               </>
             }
           ></Route>

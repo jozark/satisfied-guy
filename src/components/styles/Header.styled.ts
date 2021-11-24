@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import Line from '../assets/Line';
-import { FaBars, FaTimes } from 'react-icons/fa';
+import { FaBars, FaTimes, FaDiscord, FaTwitter } from 'react-icons/fa';
 
 export const StyledHeader = styled.header`
   position: absolute;
@@ -17,7 +17,6 @@ export const Nav = styled.nav`
   display: grid;
   grid-auto-flow: column;
   align-items: center;
-  grid-template-columns: auto 1fr 1fr;
   gap: 2rem;
 
   a {
@@ -57,12 +56,13 @@ export const CloseIcon = styled(FaTimes)`
 
 export const Links = styled.div`
   display: grid;
+  align-items: center;
   grid-template-columns: auto;
   grid-auto-flow: column;
   justify-self: flex-end;
   justify-content: space-between;
   width: 100%;
-  max-width: 600px;
+  max-width: 650px;
   min-width: 300px;
   @media screen and (max-width: 1023px) {
     display: none;
@@ -76,4 +76,16 @@ export const MenuIcon = styled.div`
     display: block;
     justify-self: flex-end;
   }
+`;
+
+export const Twitter = styled(FaTwitter)`
+  color: white;
+  font-size: 1.45rem;
+  opacity: 0.8;
+`;
+
+export const Discord = styled(FaDiscord)`
+  color: white;
+  font-size: 1.45rem;
+  opacity: 0.8;
 `;

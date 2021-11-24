@@ -18,10 +18,20 @@ function App(): JSX.Element {
   const [isClicked, setIsClicked] = useState(false);
 
   const [faqs, setFaqs] = useState([
-    { question: 'Wen mint ?!?', answer: 'TBA', open: false },
-    { question: 'How many Items?', answer: '555', open: false },
+    { question: 'Wen mint and how much?', answer: 'TBA', open: false },
     {
-      question: 'What the hell is satisfied guy?',
+      question: 'Will there be a secondary market?',
+      answer:
+        'We try to set up everything in advance with common marketplaces like Solanarat, Magic Eden and Digital Eyes.',
+      open: false,
+    },
+    {
+      question: 'Will there be a royalties?',
+      answer: 'Yes, royalties are set at 5%.',
+      open: false,
+    },
+    {
+      question: 'Is there some kind of rarity system?',
       answer: 'hehe',
       open: false,
     },

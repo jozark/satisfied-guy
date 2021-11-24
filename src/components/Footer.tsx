@@ -10,7 +10,7 @@ import {
 export default function Footer(): JSX.Element {
   return (
     <StyledFooter>
-      <Heading>Join the Community.</Heading>
+      <Heading id="social">Join the Community.</Heading>
       <Social>
         <Twitter />
         <Discord />

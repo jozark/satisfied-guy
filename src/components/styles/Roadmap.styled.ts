@@ -1,24 +1,33 @@
 import styled from 'styled-components';
 
+type RoadmapElementProps = {
+  border?: string;
+};
+
+type LineProps = {
+  color?: string;
+};
+
 export const StyledRoadmap = styled.div`
   position: relative;
   display: grid;
   grid-template-rows: auto 1fr;
-  background-position: 50% 72%;
+  background-position: 50% 80%;
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
   gap: 2rem;
-  padding: 0 1rem;
+  /* padding: 0 1rem; */
 `;
 
-export const RoadmapElement = styled.div`
+export const RoadmapElement = styled.div<RoadmapElementProps>`
   max-width: 320px;
   height: fit-content;
   justify-self: center;
-  background-color: #000000;
+  background-color: #0e0f10;
   border-radius: 12px;
-  border: 1px solid rgba(255, 255, 255, 0.125);
+  border: 2px solid #0e0f10;
+  border-color: ${({ border }) => border};
   padding: 1rem 1rem;
 
   h2 {
@@ -51,19 +60,19 @@ export const Heading = styled.h1`
 `;
 
 export const RoadmapWrapper = styled.div`
-  height: 600px;
-  align-self: center;
-  align-content: center;
-  background-image: url('images/roadmap.svg');
+  min-height: 400px;
+  align-items: center;
   background-repeat: no-repeat;
   background-position: center;
   display: grid;
   grid-auto-flow: column;
-  gap: 1rem;
-  padding-bottom: 2rem;
+  grid-template-columns: 1fr auto 1fr auto 1fr auto 1fr;
 
   @media (max-width: ${({ theme }) => theme.breakingPoints.tablet.max}) {
-    grid-auto-flow: row;
+    grid-template-columns: auto;
+    grid-template-rows: 1fr auto 1fr auto 1fr auto 1fr;
+    justify-items: center;
+    padding: 2rem 1.5rem;
   }
 `;
 
@@ -74,4 +83,17 @@ export const Subheading = styled.h2`
   text-transform: uppercase;
   opacity: 0.87;
   margin-bottom: 1.5rem;
+`;
+
+export const Line = styled.div<LineProps>`
+  border: 2px solid #d17a38;
+  border-color: ${({ color }) => color};
+  width: 100%;
+  min-width: 1rem;
+  height: 0;
+  @media (max-width: ${({ theme }) => theme.breakingPoints.tablet.max}) {
+    height: 35px;
+    min-width: 0;
+    width: 0;
+  }
 `;

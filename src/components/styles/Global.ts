@@ -22,7 +22,7 @@ export const GlobalStyles = createGlobalStyle`
   /* Firefox */
   * {
     scrollbar-width: thin;
-    scrollbar-color: #383439AA #12131B;
+    scrollbar-color: #383439AA #000;
   }
 
   /* Works on Chrome, Edge, and Safari */
@@ -31,13 +31,13 @@ export const GlobalStyles = createGlobalStyle`
   }
 
   *::-webkit-scrollbar-track {
-    background: #12131B;
+    background: #000;
   }
 
   *::-webkit-scrollbar-thumb {
     background-color: #383439;
     border-radius: 20px;
-    border: 3px solid #12131B;
+    border: 3px solid #000;
   }
 
   body {

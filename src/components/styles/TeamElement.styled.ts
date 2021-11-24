@@ -16,13 +16,13 @@ export const Image = styled.img`
 export const Member = styled.h3`
   text-align: center;
   font-size: 2rem;
+  color: #d17a38;
 `;
 
 export const Subtext = styled.p`
   font-size: 1.25rem;
   text-align: center;
   font-style: italic;
-  color: #d17a38;
   padding: 0;
 `;
 

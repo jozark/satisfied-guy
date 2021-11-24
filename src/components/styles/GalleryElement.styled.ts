@@ -12,6 +12,12 @@ export const StyledImage = styled.img`
 
 export const OuterContainer = styled.div`
   height: 380px;
+
+  &:hover,
+  &:focus {
+    transform: scale(1.01);
+  }
+
   @media (max-width: ${({ theme }) => theme.breakingPoints.mobile}) {
     height: 300px;
   }

@@ -3,6 +3,7 @@ import styled from 'styled-components';
 export const StyledInfo = styled.div`
   display: grid;
   padding: 7rem 0;
+  min-height: 100vh;
   grid-template-columns: 1fr 1fr;
   place-items: center;
   gap: 3rem;

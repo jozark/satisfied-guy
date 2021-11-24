@@ -5,6 +5,11 @@ export const StyledFaqElement = styled.div`
   border-radius: 20px;
   background-color: #0e0f10;
   padding: 1.25rem 1.75rem;
+
+  &:hover {
+    background-color: #b6672b;
+    transition: all 200ms ease-in-out;
+  }
 `;
 export const Question = styled.h3`
   font-size: 1.5rem;

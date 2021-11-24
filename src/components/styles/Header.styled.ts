@@ -25,6 +25,10 @@ export const Nav = styled.nav`
     text-decoration: none;
     color: #fff;
     opacity: 0.7;
+
+    &:hover {
+      opacity: 1;
+    }
   }
 
   @media (max-width: ${({ theme }) => theme.breakingPoints.tablet.max}) {

@@ -5,6 +5,7 @@ export const StyledGallery = styled.div`
   display: grid;
   align-items: center;
   width: 100%;
+  min-height: 100vh;
   padding: 10rem 0;
   background-image: url('images/hamburg.svg');
   background-position: 20% 30%;
@@ -15,15 +16,20 @@ export const StyledGallery = styled.div`
   }
 
   @media (max-width: ${({ theme }) => theme.breakingPoints.tablet.max}) {
-    gap: 2rem;
+    gap: 1rem;
     padding: 5rem 0;
+    min-height: auto;
   }
 `;
 
 export const GalleryWrapper = styled(ScrollContainer)`
   display: grid;
   grid-auto-flow: column;
-  gap: 5rem;
+  gap: 7rem;
   padding: 0 2rem;
   padding-top: 3rem;
+
+  @media (max-width: ${({ theme }) => theme.breakingPoints.tablet.max}) {
+    gap: 2rem;
+  }
 `;

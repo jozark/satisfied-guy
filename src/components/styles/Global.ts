@@ -18,7 +18,28 @@ export const GlobalStyles = createGlobalStyle`
     padding: 0;
     margin: 0;
   }
-  
+
+  /* Firefox */
+  * {
+    scrollbar-width: thin;
+    scrollbar-color: #383439AA #12131B;
+  }
+
+  /* Works on Chrome, Edge, and Safari */
+  *::-webkit-scrollbar {
+    width: 12px;
+  }
+
+  *::-webkit-scrollbar-track {
+    background: #12131B;
+  }
+
+  *::-webkit-scrollbar-thumb {
+    background-color: #383439;
+    border-radius: 20px;
+    border: 3px solid #12131B;
+  }
+
   body {
     background: ${({ theme }) => theme.colors.background};
     font-family: 'roboto';

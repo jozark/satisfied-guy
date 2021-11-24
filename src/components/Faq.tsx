@@ -8,7 +8,7 @@ type FaqProps = {
 export default function Faq({ children }: FaqProps): JSX.Element {
   return (
     <StyledFaq>
-      <Heading>FAQ's</Heading>
+      <Heading id="faq">FAQ's</Heading>
       <FaqWrapper>{children}</FaqWrapper>
     </StyledFaq>
   );

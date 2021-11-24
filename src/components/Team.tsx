@@ -5,7 +5,7 @@ import TeamElement from './TeamElement';
 export default function Team(): JSX.Element {
   return (
     <StyledTeam>
-      <Heading>Team</Heading>
+      <Heading id="team">Team</Heading>
       <TeamWrapper>
         <TeamElement
           path="images/team1.png"

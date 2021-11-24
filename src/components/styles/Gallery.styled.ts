@@ -14,9 +14,9 @@ export const StyledGallery = styled.div`
     display: none;
   }
 
-  @media (max-width: ${({ theme }) => theme.breakingPoints.mobile}) {
+  @media (max-width: ${({ theme }) => theme.breakingPoints.tablet.max}) {
     gap: 2rem;
-    padding-top: 7rem 0;
+    padding: 5rem 0;
   }
 `;
 
@@ -26,8 +26,4 @@ export const GalleryWrapper = styled(ScrollContainer)`
   gap: 5rem;
   padding: 0 2rem;
   padding-top: 3rem;
-  @media (max-width: ${({ theme }) => theme.breakingPoints.mobile}) {
-    gap: 2rem;
-    padding-top: 0rem;
-  }
 `;

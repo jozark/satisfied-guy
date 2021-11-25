@@ -10,29 +10,29 @@ export default function Team(): JSX.Element {
         <TeamElement
           path="images/team1.png"
           position="Art & Soul of the Project"
-          instagram="https://instagram.com"
-          twitter="https://twitter.com"
+          instagram="https://www.instagram.com/satisfied_guy/"
+          twitter="https://twitter.com/satisfied_guy"
         >
           Satisfied Guy
         </TeamElement>
         <TeamElement
           path="images/team2.png"
           position="Galerist & Management"
-          instagram="https://instagram.com"
+          instagram="https://www.instagram.com/galerieb_hamburg/"
         >
           Bludin
         </TeamElement>
         <TeamElement
           path="images/team3.png"
           position="Web Developer"
-          twitter="https://twitter.com"
+          twitter="https://twitter.com/jo_zark"
         >
           Joshua
         </TeamElement>
         <TeamElement
           path="images/team4.png"
           position="UX/UI Design"
-          twitter="https://twitter.com"
+          twitter="https://twitter.com/dOminonb"
         >
           Jan Lucas
         </TeamElement>

@@ -12,6 +12,11 @@ export const Image = styled.img`
   padding: 0 0.5rem;
   width: 100%;
   max-width: 400px;
+
+  &:hover {
+    filter: invert(1);
+    transition: all 100ms ease-in;
+  }
 `;
 
 export const Member = styled.h3`

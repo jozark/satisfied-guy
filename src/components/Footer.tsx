@@ -13,7 +13,9 @@ export default function Footer(): JSX.Element {
       <Heading id="social">Join the Community.</Heading>
       <Social>
         <Twitter />
-        <Discord />
+        <a href="https://discord.gg/p5gZ7Kq6" rel="noreferrer" target="_blank">
+          <Discord />
+        </a>
       </Social>
     </StyledFooter>
   );

@@ -31,14 +31,14 @@ export default function TeamElement({
       <Subtext>{position}</Subtext>
       <SocialMedia>
         {twitter ? (
-          <a href={twitter}>
+          <a href={twitter} rel="noreferrer" target="_blank">
             <Twitter />
           </a>
         ) : (
           <></>
         )}
         {instagram ? (
-          <a href={instagram}>
+          <a href={instagram} rel="noreferrer" target="_blank">
             <Instagram />
           </a>
         ) : (

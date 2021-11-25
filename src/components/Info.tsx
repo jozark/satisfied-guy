@@ -11,20 +11,24 @@ export default function Info(): JSX.Element {
           <Heading>Satisfied Guy</Heading>
           <Subheading>Street Art Goes Digital</Subheading>
           <p>
-            A local street artist from Hamburg created 500 unique handdrawn
+            A local street artist from Hamburg has created 500 uniquely drawn
             pieces of his signature artwork. He is represented by an emerging
-            art gallery from Hamburg. His artwork can be found on almost every
-            corner in Hamburg's hip neighborhoods like the Schanzenviertel,
-            Karoviertel and St. Pauli.
+            art gallery from Hamburg, the city where his well recognized art
+            decorates the corners of urban cultural hotspots like the
+            Schanzenviertel, Karoviertel and St. Pauli.
           </p>
           <p>
-            Sometimes the street artists act on the border of what's allowed.
-            They take the potential risk of paying high fines. Or even worse,
-            getting arrested. However, their work also contributes to the
-            culture and uniqueness of cities. Usually, street artists need to
-            stay anonymous and make a living elsewhere. NFTs finally give street
-            artists the opportunity to build a community and interact with it in
-            a meaningful way.
+            Street art embellishes our cities and turns them into what they are.
+            For the artists, this passion comes at a price in the form of
+            possible fines or arrest. However, their art should receive the
+            recognition it truly deserves.
+          </p>
+          <p>
+            By making their work accessible outside the streets, artists often
+            face a dilemma. Monetization usually involves linking their identity
+            to their art. We see NFTs as a way to solve this dilemma. With NFTs,
+            street artists finally have the opportunity to build and interact
+            with a community in a way that was not possible before.
           </p>
         </div>
       </StyledInfo>

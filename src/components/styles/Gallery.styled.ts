@@ -1,5 +1,9 @@
 import styled from 'styled-components';
 
+type GalleryWrapperProps = {
+  isDown: boolean;
+};
+
 export const StyledGallery = styled.div`
   display: grid;
   align-items: center;
@@ -24,7 +28,7 @@ export const StyledGallery = styled.div`
   }
 `;
 
-export const GalleryWrapper = styled.div`
+export const GalleryWrapper = styled.div<GalleryWrapperProps>`
   display: grid;
   grid-auto-flow: column;
   gap: 7rem;
@@ -32,6 +36,12 @@ export const GalleryWrapper = styled.div`
   padding-top: 3rem;
   overflow-x: scroll;
   overflow-y: hidden;
+
+  ${({ isDown }) =>
+    isDown &&
+    `
+    scroll-behavior: auto;
+  `}
 
   &::-webkit-scrollbar {
     display: none;
@@ -41,3 +51,5 @@ export const GalleryWrapper = styled.div`
     gap: 2rem;
   }
 `;
+
+export const ScrollButton = styled.button``;

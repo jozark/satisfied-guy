@@ -75,6 +75,7 @@ export default function Gallery(): JSX.Element {
         onMouseLeave={() => handleMouseLeave()}
         onMouseUp={() => handleMouseUp()}
         onMouseMove={(e) => handleMouseMove(e)}
+        isDown={isDown}
       >
         {GalleryImages.map((image, index) => {
           return (

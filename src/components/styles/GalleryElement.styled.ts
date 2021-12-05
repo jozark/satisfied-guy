@@ -38,20 +38,28 @@ export const Street = styled.p`
   text-transform: uppercase;
   font-family: 'Sarpanch', sans-serif;
   font-weight: 900;
-  font-size: 1.5rem;
+  font-size: 1.375rem;
   padding: 0;
   line-height: 1;
+
+  @media (max-width: ${({ theme }) => theme.breakingPoints.mobile}) {
+    font-size: 1.125rem;
+  }
 `;
 
 export const Number = styled.p`
   text-transform: uppercase;
   font-family: 'Sarpanch', sans-serif;
   font-weight: 900;
-  font-size: 1.5rem;
+  font-size: 1.375rem;
   text-align: end;
   padding: 0;
   line-height: 1;
   color: #d17a38;
+
+  @media (max-width: ${({ theme }) => theme.breakingPoints.mobile}) {
+    font-size: 1.125rem;
+  }
 `;
 
 export const Caption = styled.div`
@@ -61,4 +69,9 @@ export const Caption = styled.div`
   z-index: 1;
   bottom: -30px;
   left: 24px;
+
+  @media (max-width: ${({ theme }) => theme.breakingPoints.mobile}) {
+    bottom: -25px;
+    left: 8px;
+  }
 `;

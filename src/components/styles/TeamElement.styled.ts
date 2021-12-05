@@ -12,9 +12,10 @@ export const Image = styled.img`
   padding: 0 0.5rem;
   width: 100%;
   max-width: 400px;
+  filter: invert(1);
 
   &:hover {
-    filter: invert(1);
+    filter: invert(0);
     transition: all 100ms ease-in;
   }
 `;

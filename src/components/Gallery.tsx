@@ -1,7 +1,13 @@
 import { useState, createRef } from 'react';
 import { GalleryImages } from './assets/GalleryImages';
 import GalleryElement from './GalleryElement';
-import { GalleryWrapper, StyledGallery } from './styles/Gallery.styled';
+import {
+  ArrowLeft,
+  ArrowRight,
+  GalleryWrapper,
+  ScrollButton,
+  StyledGallery,
+} from './styles/Gallery.styled';
 
 const margin = {
   top: '2rem 0 0 0',
@@ -57,13 +63,13 @@ export default function Gallery(): JSX.Element {
 
   function shiftLeft() {
     if (galleryRef.current) {
-      galleryRef.current.scrollLeft += 432;
+      galleryRef.current.scrollLeft += 800;
     }
   }
 
   function shiftRight() {
     if (galleryRef.current) {
-      galleryRef.current.scrollLeft -= 432;
+      galleryRef.current.scrollLeft -= 800;
     }
   }
 
@@ -89,8 +95,12 @@ export default function Gallery(): JSX.Element {
           );
         })}
       </GalleryWrapper>
-      <button onClick={shiftRight}>right</button>
-      <button onClick={shiftLeft}>left</button>
+      <ScrollButton side="left" onClick={shiftRight}>
+        <ArrowLeft />
+      </ScrollButton>
+      <ScrollButton side="right" onClick={shiftLeft}>
+        <ArrowRight />
+      </ScrollButton>
     </StyledGallery>
   );
 }

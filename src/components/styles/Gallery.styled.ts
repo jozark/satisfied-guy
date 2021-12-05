@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-import ScrollContainer from 'react-indiana-drag-scroll';
 
 export const StyledGallery = styled.div`
   display: grid;
@@ -14,6 +13,10 @@ export const StyledGallery = styled.div`
     display: none;
   }
 
+  &:hover {
+    cursor: grab;
+  }
+
   @media (max-width: ${({ theme }) => theme.breakingPoints.tablet.max}) {
     gap: 1rem;
     padding: 5rem 0;
@@ -21,12 +24,18 @@ export const StyledGallery = styled.div`
   }
 `;
 
-export const GalleryWrapper = styled(ScrollContainer)`
+export const GalleryWrapper = styled.div`
   display: grid;
   grid-auto-flow: column;
   gap: 7rem;
   padding: 0 2rem;
   padding-top: 3rem;
+  overflow-x: scroll;
+  overflow-y: hidden;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
 
   @media (max-width: ${({ theme }) => theme.breakingPoints.tablet.max}) {
     gap: 2rem;

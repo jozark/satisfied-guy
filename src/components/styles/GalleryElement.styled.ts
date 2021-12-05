@@ -11,13 +11,13 @@ export const StyledImage = styled.img`
 `;
 
 export const OuterContainer = styled.div`
-  height: 380px;
+  height: 320px;
 
-  &:hover,
+  /* &:hover,
   &:focus {
     transform: scale(1.01);
     cursor: grab;
-  }
+  } */
 
   @media (max-width: ${({ theme }) => theme.breakingPoints.mobile}) {
     height: 300px;
@@ -28,6 +28,8 @@ export const ImageContainer = styled.div<ImageContainerProps>`
   position: relative;
   width: 400px;
   margin: ${({ margin }) => margin};
+  pointer-events: none;
+
   @media (max-width: ${({ theme }) => theme.breakingPoints.mobile}) {
     /* margin: 0; */
     width: auto;

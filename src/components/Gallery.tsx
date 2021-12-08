@@ -51,8 +51,6 @@ export default function Gallery(): JSX.Element {
       const delta = x - startX;
 
       galleryRef.current.scrollLeft = scrollLeft - delta;
-
-      console.log(galleryRef.current.scrollLeft, 'sc');
     }
   }
 
@@ -63,13 +61,13 @@ export default function Gallery(): JSX.Element {
 
   function shiftLeft() {
     if (galleryRef.current) {
-      galleryRef.current.scrollLeft += 800;
+      galleryRef.current.scrollLeft += 660;
     }
   }
 
   function shiftRight() {
     if (galleryRef.current) {
-      galleryRef.current.scrollLeft -= 800;
+      galleryRef.current.scrollLeft -= 660;
     }
   }
 

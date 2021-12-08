@@ -72,6 +72,7 @@ function App(): JSX.Element {
                 <Faq>
                   {faqs.map((faq, i) => (
                     <FaqElement
+                      key={i}
                       question={faq.question}
                       isClicked={faq.open}
                       index={i}

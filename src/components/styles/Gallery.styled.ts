@@ -28,7 +28,7 @@ export const StyledGallery = styled.div`
   }
 
   @media (max-width: ${({ theme }) => theme.breakingPoints.tablet.max}) {
-    gap: 1rem;
+    /* gap: 1rem; */
     padding: 5rem 0;
     min-height: auto;
   }
@@ -72,7 +72,7 @@ export const ScrollButton = styled.button<ScrollButtonProps>`
   height: 300px;
   ${({ side }) =>
     side === 'left'
-      ? `left: 0`
+      ? `left: 0;`
       : `
   right: 0;
   background: linear-gradient(
@@ -82,6 +82,9 @@ export const ScrollButton = styled.button<ScrollButtonProps>`
     rgba(0, 0, 0, 0) 100%
   );
   `}
+  @media (max-width: ${({ theme }) => theme.breakingPoints.mobile}) {
+    display: none;
+  }
 `;
 
 export const ArrowRight = styled(MdOutlineChevronRight)`

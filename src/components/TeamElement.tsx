@@ -27,6 +27,7 @@ export default function TeamElement({
   return (
     <StyledTeamElement>
       <Image src={path} alt="" />
+      <div></div>
       <Member>{children}</Member>
       <Subtext>{position}</Subtext>
       <SocialMedia>

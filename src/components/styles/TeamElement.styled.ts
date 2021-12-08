@@ -12,10 +12,15 @@ export const Image = styled.img`
   padding: 0 0.5rem;
   width: 100%;
   max-width: 400px;
+  filter: invert(1);
 
   &:hover {
-    filter: invert(1);
+    filter: invert(0);
     transition: all 100ms ease-in;
+  }
+
+  @media (max-width: 500px) {
+    max-width: 150px;
   }
 `;
 
@@ -23,6 +28,10 @@ export const Member = styled.h3`
   text-align: center;
   font-size: 2rem;
   color: #d17a38;
+
+  @media (max-width: 500px) {
+    font-size: 1.25rem;
+  }
 `;
 
 export const Subtext = styled.p`
@@ -30,6 +39,10 @@ export const Subtext = styled.p`
   padding-top: 0;
   text-align: center;
   font-style: italic;
+
+  @media (max-width: 500px) {
+    font-size: 0.8rem;
+  }
 `;
 
 export const SocialMedia = styled.div`

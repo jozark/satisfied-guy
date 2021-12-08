@@ -7,12 +7,12 @@ export const StyledTeam = styled.div`
   max-width: 1366px;
   margin: 0 auto;
   @media (max-width: ${({ theme }) => theme.breakingPoints.tablet.max}) {
-    padding: 2rem 1.5rem;
+    padding: 2rem 0.5rem;
   }
 `;
 
 export const Heading = styled.h2`
-  font-size: 3rem;
+  font-size: 2.5rem;
   font-weight: bold;
   font-style: italic;
   margin-bottom: 0.25rem;
@@ -34,6 +34,7 @@ export const TeamWrapper = styled.div`
   }
 
   @media (max-width: 580px) {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
   }
 `;

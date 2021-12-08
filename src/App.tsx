@@ -30,11 +30,6 @@ function App(): JSX.Element {
       answer: 'Yes, royalties are set at 5%.',
       open: false,
     },
-    {
-      question: 'Is there some kind of rarity system?',
-      answer: 'hehe',
-      open: false,
-    },
   ]);
 
   function toggleFaq(index: number): void {

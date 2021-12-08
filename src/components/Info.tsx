@@ -13,22 +13,22 @@ export default function Info(): JSX.Element {
           <p>
             A local street artist from Hamburg has created 500 uniquely drawn
             pieces of his signature artwork. He is represented by an emerging
-            art gallery from Hamburg, the city where his well recognized art
-            decorates the corners of urban cultural hotspots like the
-            Schanzenviertel, Karoviertel and St. Pauli.
+            art gallery from Hamburg. His well recognized art decorates the
+            corners of Hamburg's cultural hotspots like the Schanzenviertel,
+            Karoviertel and St. Pauli.
           </p>
           <p>
-            Street art embellishes our cities and turns them into what they are.
+            Street art embellishes our cities. It turns them into what they are.
             For the artists, this passion comes at a price in the form of
             possible fines or arrest. However, their art should receive the
             recognition it truly deserves.
           </p>
           <p>
-            By making their work accessible outside the streets, artists often
-            face a dilemma. Monetization usually involves linking their identity
-            to their art. We see NFTs as a way to solve this dilemma. With NFTs,
-            street artists finally have the opportunity to build and interact
-            with a community in a way that was not possible before.
+            When street artist sell their work publicly, they often face a
+            dilemma. Monetization usually involves linking their identity to
+            their art. With NFTs, street artists finally have the opportunity to
+            build and interact with a community in a way that was not possible
+            before.
           </p>
         </div>
       </StyledInfo>

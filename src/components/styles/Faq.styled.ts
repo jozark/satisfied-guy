@@ -13,10 +13,11 @@ export const Heading = styled.h2`
   font-weight: bold;
   font-style: italic;
   margin-bottom: 0.25rem;
-  padding-bottom: 3rem;
+  padding-bottom: 4rem;
 
   @media (max-width: ${({ theme }) => theme.breakingPoints.tablet.max}) {
     padding-top: 3rem;
+    padding-bottom: 3rem;
   }
 `;
 

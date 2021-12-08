@@ -33,8 +33,9 @@ export default function Team(): JSX.Element {
           path="images/team4.png"
           position="UX/UI Design"
           twitter="https://twitter.com/dOminonb"
+          instagram="https://www.instagram.com/galerieb_hamburg/"
         >
-          Jan Lucas
+          Jan
         </TeamElement>
       </TeamWrapper>
     </StyledTeam>

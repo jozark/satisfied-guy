@@ -31,7 +31,7 @@ export const RoadmapElement = styled.div<RoadmapElementProps>`
   border-radius: 12px;
   border: 2px solid #0e0f10;
   border-color: ${({ border }) => border};
-  padding: 0.5rem 0.375rem;
+  padding: 1rem 1.25rem;
 
   h2 {
     font-size: 1.5rem;
@@ -47,6 +47,7 @@ export const RoadmapElement = styled.div<RoadmapElementProps>`
   }
 
   @media (max-width: ${({ theme }) => theme.breakingPoints.mobile}) {
+    padding: 0.5rem 0.375rem;
     h2 {
       font-size: 1.25rem;
       color: #d17a38;

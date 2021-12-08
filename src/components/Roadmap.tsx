@@ -31,7 +31,7 @@ export default function Roadmap(): JSX.Element {
         <Line color="#2B2B2B" />
         <RoadmapElement>
           <h2>More TBA</h2>
-          <p>Place artworks in Berlin, scavenger hunts and airdrops</p>
+          <p>Place artworks in Berlin, scavenger hunts and more</p>
         </RoadmapElement>
         <Line color="#2B2B2B" />
       </RoadmapWrapper>

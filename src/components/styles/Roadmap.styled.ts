@@ -17,17 +17,21 @@ export const StyledRoadmap = styled.div`
   background-size: cover;
   width: 100%;
   gap: 2rem;
+
+  @media (max-width: ${({ theme }) => theme.breakingPoints.mobile}) {
+    gap: 0;
+  }
 `;
 
 export const RoadmapElement = styled.div<RoadmapElementProps>`
-  max-width: 320px;
+  max-width: 400px;
   height: fit-content;
   justify-self: center;
   background-color: #0e0f10;
   border-radius: 12px;
   border: 2px solid #0e0f10;
   border-color: ${({ border }) => border};
-  padding: 1rem 1rem;
+  padding: 0.5rem 0.375rem;
 
   h2 {
     font-size: 1.5rem;
@@ -39,13 +43,28 @@ export const RoadmapElement = styled.div<RoadmapElementProps>`
   }
 
   @media (max-width: ${({ theme }) => theme.breakingPoints.tablet.max}) {
-    max-width: 500px;
+    text-align: center;
+  }
+
+  @media (max-width: ${({ theme }) => theme.breakingPoints.mobile}) {
+    h2 {
+      font-size: 1.25rem;
+      color: #d17a38;
+      text-align: center;
+    }
+
+    p {
+      font-size: 1rem;
+      text-align: center;
+    }
   }
 `;
 
 export const Text = styled.div`
   justify-self: center;
   text-align: center;
+  padding: 0 1rem;
+
   @media (max-width: ${({ theme }) => theme.breakingPoints.tablet.max}) {
     padding-top: 0;
   }
@@ -56,6 +75,10 @@ export const Heading = styled.h1`
   font-weight: bold;
   font-style: italic;
   margin-bottom: 0.25rem;
+
+  @media (max-width: ${({ theme }) => theme.breakingPoints.mobile}) {
+    font-size: 2.5rem;
+  }
 `;
 
 export const RoadmapWrapper = styled.div`
@@ -71,7 +94,7 @@ export const RoadmapWrapper = styled.div`
     grid-template-columns: auto;
     grid-template-rows: 1fr auto 1fr auto 1fr auto 1fr;
     justify-items: center;
-    padding: 2rem 1.5rem;
+    padding: 2rem 2rem;
   }
 `;
 
@@ -82,6 +105,10 @@ export const Subheading = styled.h2`
   text-transform: uppercase;
   opacity: 0.87;
   margin-bottom: 1.5rem;
+
+  @media (max-width: ${({ theme }) => theme.breakingPoints.mobile}) {
+    font-size: 1.25rem;
+  }
 `;
 
 export const Line = styled.div<LineProps>`

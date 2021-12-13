@@ -3,8 +3,8 @@ import styled from 'styled-components';
 export const StyledHero = styled.div`
   height: 100vh;
   min-height: 500px;
-  background-image: url('images/hero.png');
   background-size: cover;
+  background-color: rgba(0, 0, 0, 0.5);
 `;
 
 export const Video = styled.video`

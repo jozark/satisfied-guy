@@ -55,6 +55,8 @@ export const GalleryWrapper = styled.div<GalleryWrapperProps>`
 
   @media (max-width: ${({ theme }) => theme.breakingPoints.tablet.max}) {
     gap: 2rem;
+    padding-right: 1rem;
+    padding-left: 0rem;
   }
 `;
 

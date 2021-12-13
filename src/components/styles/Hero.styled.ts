@@ -4,7 +4,7 @@ export const StyledHero = styled.div`
   height: 100vh;
   min-height: 500px;
   background-size: cover;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.3);
 `;
 
 export const Video = styled.video`
@@ -13,6 +13,10 @@ export const Video = styled.video`
   height: 100%;
   position: absolute;
   z-index: -1;
+
+  @media (max-width: ${({ theme }) => theme.breakingPoints.mobile}) {
+    object-position: 77% 23%;
+  }
 `;
 
 export const ImageLeft = styled.img`
@@ -42,6 +46,7 @@ export const ImageRight = styled.img`
     margin-right: 0;
     margin-left: 4rem;
     justify-self: center;
+    display: none;
   }
 `;
 

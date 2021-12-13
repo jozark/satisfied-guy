@@ -25,6 +25,11 @@ export const Nav = styled.nav`
     text-decoration: none;
     color: #fff;
     opacity: 1;
+    transform: scale(0.98);
+
+    &:hover {
+      transform: scale(1);
+    }
   }
 
   @media (max-width: ${({ theme }) => theme.breakingPoints.tablet.max}) {
@@ -32,8 +37,12 @@ export const Nav = styled.nav`
   }
 
   @media (max-width: ${({ theme }) => theme.breakingPoints.mobile}) {
-    grid-template-columns: auto 1fr;
+    grid-template-columns: 1fr 1fr;
   }
+`;
+
+export const HeaderLink = styled.a`
+  z-index: 1;
 `;
 
 export const StyledLine = styled(Line)`
@@ -64,8 +73,30 @@ export const Links = styled.div`
   width: 100%;
   max-width: 650px;
   min-width: 300px;
+
   @media screen and (max-width: 1023px) {
-    display: none;
+    grid-auto-flow: row;
+    min-width: 0;
+    width: 100%;
+    justify-content: center;
+    align-content: center;
+    gap: 3rem;
+    position: absolute;
+    padding-bottom: 3rem;
+    padding-top: 6rem;
+    right: 0;
+    left: 0;
+    height: 100vh;
+    top: 0;
+    z-index: 0;
+    max-width: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    backdrop-filter: blur(5px);
+
+    a {
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
   }
 `;
 
@@ -75,6 +106,7 @@ export const MenuIcon = styled.div`
   @media screen and (max-width: 1023px) {
     display: block;
     justify-self: flex-end;
+    z-index: 1;
   }
 `;
 

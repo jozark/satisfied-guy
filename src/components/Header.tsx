@@ -1,4 +1,5 @@
 import { HashLink } from 'react-router-hash-link';
+import useWindowDimensions from '../useWindowDimensions';
 import Logo from './assets/Logo';
 import {
   StyledHeader,
@@ -7,6 +8,7 @@ import {
   BarIcon,
   CloseIcon,
   MenuIcon,
+  HeaderLink,
 } from './styles/Header.styled';
 
 type NavbarProps = {
@@ -18,13 +20,15 @@ export default function navbar({
   isClicked,
   handleClick,
 }: NavbarProps): JSX.Element {
+  const { height, width } = useWindowDimensions();
+
   return (
     <StyledHeader>
       <Nav>
-        <HashLink to="/">
+        <HeaderLink>
           <Logo />
-        </HashLink>
-        <Links>
+        </HeaderLink>
+        <Links style={{ display: !isClicked && width < 1023 ? 'none' : '' }}>
           <HashLink to="#info">info</HashLink>
           <HashLink to="#gallery">gallery</HashLink>
           <HashLink to="#roadmap">roadmap</HashLink>

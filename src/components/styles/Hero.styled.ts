@@ -4,7 +4,7 @@ export const StyledHero = styled.div`
   height: 100vh;
   min-height: 500px;
   background-size: cover;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.3);
 `;
 
 export const Video = styled.video`
